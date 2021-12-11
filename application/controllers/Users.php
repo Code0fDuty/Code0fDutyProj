@@ -1,8 +1,7 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined(name 'BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
-
+class Users extends CI_Controller {
 	/**
 	 * Index Page for this controller.
 	 *
@@ -20,11 +19,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('home_page');
+		$this->load->view('welcome_message');
 	}
 
-	function registerNow()
-	{
-		
+	public function register() {
+		$this->load->view('users/addUser');
 	}
+		
 }
