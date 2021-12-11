@@ -23,7 +23,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=base_url('welcome/login')?>">Login</a>
+          <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,40 +54,28 @@
         <div class="col-md-4">
         <div class="card" style="margin-top: 30px">
             <div class="card-header text-center">
-              Sign Up
+    Login
             </div>
             <div class="card-body">
-                <form method="post" autocomplete="off" action="<?=base_url('welcome/registerNow')?>">
-                    <div class="mb-3">
-                       <label for="exampleInputEmail1" class="form-label">Name</label>
-                         <input type="text" placeholder="User Name" name="username" class="form-control" id="name" aria-describedby="name">
+            <form method="post" autocomplete="off" action="<?=base_url('welcome/Login')?>">
+               
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" placeholder="Email Address" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     
-                    </div>
-                       <div class="mb-3">
-                           <label for="exampleInputEmail1" class="form-label">Email address</label>
-                           <input type="email" placeholder="Email Address" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
-                       </div>
-                             <div class="mb-3">
-                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                 <input type="password" placeholder="User Password"  name="password" class="form-control" id="exampleInputPassword1">
-                             </div>
-                                <!-- <div class="mb-3 form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                  </div> -->
-                       <div class="text-center">
-                             <button type="Register" class="btn btn-primary">Register</button>
-                       </div>
-
-                       <?php
-                       if($this->session->flashdata('success')) { ?>
-                        <p class="text-success text-center" style="margin-top: 10px;"> <?=$this->session->flashdata('success')?></p>
-                      
-                       <?php } ?>
-                
-
-               </form>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" placeholder="User Password"  name="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <!-- <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div> -->
+                <div class="text-center">
+                    <button type="Login" class="btn btn-primary">Login</button>
+                </div>
+            </form>
               </div>
             </div>
           </div>

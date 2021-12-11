@@ -26,5 +26,34 @@ class Welcome extends CI_Controller {
 	function registerNow()
 	{
 		
+		if($_SERVER['REQUEST_METHOD']=='POST')
+		{
+			$this->form_validation->set_rules('username','User Name','required');
+			$this->form_validation->set_rules('email','Email','required');
+			$this->form_validation->set_rules('password','Password','required');
+	
+			if($this->form_validation->run()==TRUE)
+			{
+				$username = $this->input->post('username');
+				$email = $this->input->post('email');
+				$password = $this->input->post('password');
+
+				$data = array(
+					'username'=>$username,
+					'email'=>$email,
+					'password'=>sha1($password),
+					'status'=>'1'
+				);
+
+				$this->load->model('user_model');
+				$this->user_model->insertuser($data);
+				$this->session->set_flashdata('success','Successfully User Created');
+				redirect(base_url('welcome/index'));
+			}
+		} 
+	}
+	function login()
+	{
+		$this->load->view('login');
 	}
 }
