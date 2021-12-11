@@ -1,11 +1,10 @@
-<?php if ( ! defined(name 'BASEPATH')) exit('No direct script access allowed');
+<?php 
 class User_model extends CI_Model {
-    private $table = "users";
-    public function getUsers($id = null) {
-        if(isset($id) && $id != null){
-            $this->db->where('id',$id);
+    
+    function insertuser($data)
+        {
+            $this->db->insert('tbl_user',$data);
         }
-        $query = $this->db->get($this->table);
-        return $query->result_array();
-    }
+       
+    
 }
