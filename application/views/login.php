@@ -57,7 +57,7 @@
     Login
             </div>
             <div class="card-body">
-            <form method="post" autocomplete="off" action="<?=base_url('welcome/Login')?>">
+            <form method="post" autocomplete="off" action="<?=base_url('welcome/LoginNow')?>">
                
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -75,6 +75,14 @@
                 <div class="text-center">
                     <button type="Login" class="btn btn-primary">Login</button>
                 </div>
+
+                <?php
+                       if($this->session->flashdata('error')) { ?>
+                        <p class="text-danger text-center" style="margin-top: 10px;"> <?=$this->session->flashdata('error')?></p>
+                      
+                       <?php } ?>
+
+
             </form>
               </div>
             </div>
