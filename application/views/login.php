@@ -11,85 +11,69 @@
     <title>User Login & Registration</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Login & Register</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-        <div class="card" style="margin-top: 30px">
-            <div class="card-header text-center">
-    Login
-            </div>
-            <div class="card-body">
-            <form method="post" autocomplete="off" action="<?=base_url('welcome/LoginNow')?>">
-               
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" placeholder="Email Address" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input type="password" placeholder="User Password"  name="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <!-- <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div> -->
-                <div class="text-center">
-                    <button type="Login" class="btn btn-primary">Login</button>
-                </div>
+  	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">Login & Register</a>
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <li class="nav-item">
+		          <a class="nav-link active" aria-current="page" href="#">Home</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="#">Link</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+		        </li>
+		      </ul>
+		      <form class="d-flex">
+		        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		        <button class="btn btn-outline-success" type="submit">Search</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
 
-                <?php
-                       if($this->session->flashdata('error')) { ?>
-                        <p class="text-danger text-center" style="margin-top: 10px;"> <?=$this->session->flashdata('error')?></p>
-                      
-                       <?php } ?>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="card" style="margin-top: 30px">
+					  <div class="card-header text-center">
+					    Login Now
+					  </div>
+					  <div class="card-body">
+					   <form method="post" autocomplete="off" action="<?=base_url('welcome/loginnow')?>">
+					 
+						  <div class="mb-3">
+						    <label for="exampleInputEmail1" class="form-label">Email address</label>
+						    <input type="email"  placeholder="Email Address" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+						  </div>
+						  <div class="mb-3">
+						    <label for="exampleInputPassword1" class="form-label">Password</label>
+						    <input type="password" name="password"  placeholder="User Password"  class="form-control" id="exampleInputPassword1">
+						  </div>
 
+						 <div class="text-center">
+						  <button type="submit" class="btn btn-primary">Login Now</button>
+						</div>
 
-            </form>
-              </div>
-            </div>
-          </div>
-        <div class="col-md-4"></div>
-    </div>
-</div>
+					<?php
+						if($this->session->flashdata('error')) {	?>
+						 <p class="text-danger text-center" style="margin-top: 10px;"> <?=$this->session->flashdata('error')?></p>
+						<?php } ?>
+						
+						</form>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
     
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -104,4 +88,3 @@
     -->
   </body>
 </html>
-    

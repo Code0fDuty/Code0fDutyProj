@@ -14,5 +14,4 @@ else
 
 
  ?>
-
- <a href="<?=base_url('welcome/logout')?>">logout</a>
+ <a href="<?=base_url('welcome/logout')?>">Logout</a>
