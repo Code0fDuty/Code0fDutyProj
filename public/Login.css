@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background:url(bg.jpg);
+    background-size: cover;
+    
+   
+}
+
+.Logo img
+{
+    
+    width: 180px;
+    float: left;
+    padding-left: 4%;
+    padding-top: 1%;
+    text-align: center;
+    
+}
+.box
+{
+    width: 20%;
+    height: 45%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(0, 0, 0, 0.753);
+    text-align: center;
+}
+
+.box h1{
+    margin-top: 1%;
+    color: whitesmoke;
+    font-size: xx-large;
+    font-family: Georgia,serif;
+    font-weight: 700;
+
+}
+.box input[type="text"],[type="password"]
+{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: whitesmoke;
+    font-size: 16px;
+    display: flex;
+
+    
+}
+
+.box input[type="submit"]
+{
+    
+    color: black;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.box input[type="submit"]:hover
+{
+    background: rgba(241, 1, 1, 0.315);
+}
+.sign-up
+{
+    color: black;
+    width: 75%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10%;
+}
+.sign-up[type="button"]:hover
+{
+    background: rgba(241, 1, 1, 0.315);
+}
+.content 
+{
+    width: 60%;
+    height: 45%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(243, 150, 150, 0);
+    text-align: left;
+    color: white;
+}
+    
+
+.content .par
+{
+    margin-top: 1%;
+    color: rgb(238, 197, 197);
+    font-size: 100px;
+    font-family: Georgia,serif;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-align: center;
+}
