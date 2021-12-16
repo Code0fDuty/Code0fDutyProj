@@ -39,29 +39,33 @@ Wireframe
 Login
 Register
 
-Final list for the weeek 1
-Top level finalize
-Low level finalize
-ERD
-DB Schema 
-Sequence Finalize
-Wireframe 
-Login
-Register
+Final list for the week 1
+Top level finalize 3
+Low level finalize 2
+ERD 3 
+DB Schema 5
+Sequence Finalize 5 
+Wireframe 5
+Login 7 
+Register 8
 
-Predicted for Week 2
-Category Select and edit 
-Memo Create and edit 
-Task Add
-Event Add
-Select Date (CALENDAR)
-Save Memo
-UI Design
+Week 2
+Login 8 
+Register 8
+UI Design 13
 
 Predicted for Week 3
-Delete memo
-Update memo
-History Delete
-UI Design 
+Memo CRUD 6
+Task CRUD 8
+Event CRUD 8
+Select Date (CALENDAR) 13
+
+Predicted for Week 4
+Save Memo 8
+History Delete 13
+UI Design  13
+
+Predicted for week 5
+Finalizing
 
 https://github.com/Code0fDuty/Code0fDutyProj/projects/1#card-74111484
