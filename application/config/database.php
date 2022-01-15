@@ -78,7 +78,11 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
+<<<<<<< HEAD
 	'database' => 'testing',
+=======
+	'database' => 'ci_login',
+>>>>>>> 72decd48a21a6595fb560b781fc4454b09273acb
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
