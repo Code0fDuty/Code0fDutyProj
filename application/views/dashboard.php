@@ -1,5 +1,5 @@
- <h1> GoalTracker </h1>
-
+<a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
+<form class="d-left">
 <?php 
 if($this->session->userdata('UserLoginSession'))
 {
@@ -124,7 +124,7 @@ echo "<body style='background-color:white'>";
 </head>
     <body>
         <br />
-        <h2 align ="center"><a href="#">Calendar</a></h2>
+        <h2 align ="center"><a href="#">CALENDAR TRACKER</a></h2>
         <br />
         <div class="container">
             <div id="calendar"></div>
