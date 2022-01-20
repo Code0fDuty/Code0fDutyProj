@@ -11,7 +11,7 @@ else
     redirect(base_url('welcome/login'));
 }
 
-echo "<body style='background-color:white'>";
+echo "<body style='background-color: #F5F5DC.'>";
 
 
 
