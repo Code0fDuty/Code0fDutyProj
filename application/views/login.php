@@ -57,7 +57,7 @@
 			<div class="col-md-4">
 				<div class="card" style="margin-top: 30px">
 					<div class="card-header text-center">
-						Sign in
+					<img src="https://img.icons8.com/ios-glyphs/50/000000/user--v1.png"/>
 					</div>
 					  <div class="card-body">
 					   <form method="post" autocomplete="off" action="<?=base_url('welcome/loginnow')?>">

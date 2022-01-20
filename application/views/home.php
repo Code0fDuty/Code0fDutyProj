@@ -59,7 +59,7 @@
 			<div class="col-md-4">
 				<div class="card" style="margin-top: 30px">
 					<div class="card-header text-center">
-						SIGN UP
+						<img src="https://img.icons8.com/material/50/000000/edit-user-male--v1.png"/>
 					</div>
 					<div class="card-body">
 						<form method="post" autocomplete="off" action="<?=base_url('welcome/registerNow')?>">
