@@ -73,7 +73,7 @@ class Welcome extends CI_Controller {
 
 				$this->load->model('user_model');
 				$status = $this->user_model->checkPassword($password,$email);
-				if($status!=false)
+				if($status!=true)
 				{
 					$username = $status->username;
 					$email = $status->email;
