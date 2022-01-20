@@ -52,7 +52,7 @@
 			</div>
 		</div>
 	</nav>
-	<p>adsda</p>
+	<p> </p>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6"></div>
