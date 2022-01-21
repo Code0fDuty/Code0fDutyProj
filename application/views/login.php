@@ -74,7 +74,9 @@
 						 <div class="text-center">
 						  <button type="submit" class="btn btn-primary">Login Now</button>
 						</div>
-
+				<br>
+						<p class="login-register-text">Have an account? <a href="/Team-7/welcome">Login Here</a>.</p>
+				
 						<?php
 						if($this->session->flashdata('error')) {?>
 						 <p class="text-danger text-center" style="margin-top: 10px;"> <?=$this->session->flashdata('error')?></p>
