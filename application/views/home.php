@@ -104,8 +104,8 @@
 
 							<div class="text-center">
 								<button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
-							</div>
-
+							</div><br>
+							<p class="login-register-text">Have an account? <a href="welcome/login">Login Here</a>.</p>
 
 							<?php
 						if($this->session->flashdata('success'))  {	?>
