@@ -28,7 +28,7 @@
                     var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
                     var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
                     $.ajax({
-                        url:"<?php echo base_url(); ?>fullcalendar/insert",
+                        url:"<?php echo base_url(); ?>dashboard/insert",
                         type:"POST",
                         data:{title:title, start:start, end:end},
                         success:function()
@@ -50,7 +50,7 @@
                 var id = event.id;
 
                 $.ajax({
-                    url:"<?php echo base_url(); ?>fullcalendar/update",
+                    url:"<?php echo base_url(); ?>dashboard/update",
                     type:"POST",
                     data:{title:title, start:start, end:end, id:id},
                     success:function()
@@ -69,7 +69,7 @@
                 var title = event.title;
                 var id = event.id;
                 $.ajax({
-                    url:"<?php echo base_url(); ?>fullcalendar/update",
+                    url:"<?php echo base_url(); ?>dashboard/update",
                     type:"POST",
                     data:{title:title, start:start, end:end, id:id},
                     success:function()
@@ -85,7 +85,7 @@
                 {
                     var id = event.id;
                     $.ajax({
-                        url:"<?php echo base_url(); ?>fullcalendar/delete",
+                        url:"<?php echo base_url(); ?>dashboard/delete",
                         type:"POST",
                         data:{id:id},
                         success:function()

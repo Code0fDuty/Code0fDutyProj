@@ -30,25 +30,25 @@
 			
 
 
-			<p><i class="fas fa-bolt fa-3x amber-text pr-3" aria-hidden="true"></i> amber-text</p>
+			<p><i class="fas fa-bolt fa-3x amber-text pr-3" aria-hidden="true"></i></p>
            			
 			<form class="d-flex">
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<!-- <li class="nav-item">
+				 <li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li> -->
-					<!-- <li class="nav-item">
+					</li>
+				 <li class="nav-item">
 						<a class="nav-link" href="<?=base_url('welcome/login')?>">Home</a>
-					</li> -->
+					</li> 
 					<li class="nav-item">
 						<a class="nav-link" href="<?=base_url('welcome/login')?>">Login</a>
 					</li>
 				</ul>
-				<!-- <form class="d-flex">
+				 <form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form> -->
+				</form> 
 			</div>
 		</div>
 	</nav>
