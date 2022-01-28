@@ -36,18 +36,9 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				 <li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
-					</li>
-				 <li class="nav-item">
-						<a class="nav-link" href="<?=base_url('welcome/login')?>">Home</a>
-					</li> 
-					<li class="nav-item">
 						<a class="nav-link" href="<?=base_url('welcome/login')?>">Login</a>
-					</li>
+					</li> 
 				</ul>
-				 <form class="d-flex">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
 				</form> 
 			</div>
 		</div>
@@ -59,7 +50,10 @@
 			<div class="col-md-4">
 				<div class="card" style="margin-top: 30px">
 					<div class="card-header text-center">
-						<img src="https://img.icons8.com/material/50/000000/edit-user-male--v1.png"/>
+						<img src="https://img.icons8.com/material/50/000000/edit-user-male--v1.png" ass="rounded-circle" alt="logo">
+						<h2>Sign Up</h2>
+						<p>Fill out this form to create an account!</p>
+
 					</div>
 					<div class="card-body">
 						<form method="post" autocomplete="off" action="<?=base_url('welcome/registerNow')?>">
@@ -105,7 +99,7 @@
 							<div class="text-center">
 								<button type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
 							</div><br>
-							<p class="login-register-text">Already have an account? <a href="welcome/login">Click to Login</a>.</p>
+							<p class="login-register-text text-center small">Already have an account? <a href="welcome/login">Click to Login</a>.</p>
 
 							<?php
 						if($this->session->flashdata('success'))  {	?>
