@@ -13,7 +13,7 @@
 
     <title>GOAL TRACKER LOGIN</title>
   </head>
-  <body style='background-color:#F8956F'>
+  <body style='background-color: #ffcaaf'>
 
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		  <div class="container-fluid">
@@ -58,10 +58,12 @@
 				<div class="card" style="margin-top: 30px">
 					<div class="card-header text-center">
 					<img src="https://img.icons8.com/ios-glyphs/50/000000/user--v1.png"/>
+					<h2>Welcome back!</h2>
 					</div>
+			
 					  <div class="card-body">
 					   <form method="post" autocomplete="off" action="<?=base_url('welcome/loginnow')?>">
-					 
+
 						  <div class="mb-3">
 						    <label for="exampleInputEmail1" class="form-label">Email address</label>
 						    <input type="email"  placeholder="Email Address" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -70,12 +72,19 @@
 						    <label for="exampleInputPassword1" class="form-label">Password</label>
 						    <input type="password" name="password"  placeholder="User Password"  class="form-control" id="exampleInputPassword1">
 						  </div>
+						  <div class="col-auto">
+							<div class="form-check mb-2">
+								<input class="form-check-input" type="checkbox" id="autoSizingCheck">
+								<label class="form-check-label" for="autoSizingCheck">
+								Remember me
+								</label>
+							</div>
 
 						 <div class="text-center">
 						  <button type="submit" class="btn btn-primary">Login Now</button>
 						</div>
 				<br>
-						<p class="login-register-text">Don't have an account? <a href="/Team-7/welcome">Login Here</a>.</p>
+						<p class="login-register-text text-center small">Don't have an account? <a href="/Team-7/welcome">Login Here</a>.</p>
 				
 						<?php
 						if($this->session->flashdata('error')) {?>
