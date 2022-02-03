@@ -12,10 +12,15 @@
 
 
     <title>GOAL TRACKER LOGIN</title>
+	<link rel="stylesheet" href="styles.css">
+
   </head>
-  <body style='background-color: #ffcaaf'>
+  <body style='background: -webkit-linear-gradient(right, #3931af, #00c6ff)'>
+
+  
 
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
 		  <div class="container-fluid">
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 		      <span class="navbar-toggler-icon"></span>
@@ -45,20 +50,20 @@
 		    </div>
 		  </div>
 		</nav>
-       
 		<div class="container">
 			<div class="row">
 				
 			<div class="col-md-6" font-family="sans-serif-bold">
 				<br><br>
 
-				&nbsp; <h1> Create your Plan <br> Set your Goal <br>Build your Habit! </h1>
+				&nbsp; <h1><b> Create your Plan <br> Set your Goal <br>Build your Habit! </b></h1>
 			</div>
+
 			<div class="col-md-4">
 				<div class="card" style="margin-top: 30px">
 					<div class="card-header text-center">
 					<img src="https://img.icons8.com/ios-glyphs/50/000000/user--v1.png"/>
-					<h2>Welcome back!</h2>
+					<!-- <h2>Welcome back!</h2> -->
 					</div>
 			
 					  <div class="card-body">
@@ -84,7 +89,7 @@
 						  <button type="submit" class="btn btn-primary">Login Now</button>
 						</div>
 				<br>
-						<p class="login-register-text text-center small">Don't have an account? <a href="/Team-7/welcome">Login Here</a>.</p>
+						<p class="login-register-text text-center small">Don't have an account? <a href="/Team-7/welcome">SIGN UP </a>.</p>
 				
 						<?php
 						if($this->session->flashdata('error')) {?>

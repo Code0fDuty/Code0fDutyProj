@@ -1,4 +1,12 @@
-<a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
+<!-- <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>  -->
+<div class="container-fluid">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
+
+&nbsp; <a class="navbar-brand-right" href="<?=base_url('welcome/logout')?>">Logout</a>
+
 <form class="d-left">
 <?php 
 if($this->session->userdata('UserLoginSession'))
@@ -16,12 +24,20 @@ echo "<body style='background-color: #F5F5DC.'>";
 
 
  ?>
- <a href="<?=base_url('welcome/logout')?>">Logout</a>
 
 
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	
+
+
+    <title>GOAL TRACKER LOGIN</title>
+	<link rel="stylesheet" href="styles.css">
+
     <title>Calendar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
@@ -30,6 +46,7 @@ echo "<body style='background-color: #F5F5DC.'>";
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
     <script>
+    
     $(document).ready(function(){
         var calendar = $('#calendar').fullCalendar({
             editable:true,
@@ -117,12 +134,17 @@ echo "<body style='background-color: #F5F5DC.'>";
                     })
                 }
             }
+            
         });
+        
     });
+    
              
     </script>
+    
 </head>
     <body>
+        
         <br />
         <h2 align ="center"><a href="#">CALENDAR TRACKER</a></h2>
         <br />

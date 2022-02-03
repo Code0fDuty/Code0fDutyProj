@@ -28,12 +28,12 @@ SET time_zone = "+00:00";
 --
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `FirstName` varchar(50) NOT NULL,
-  `LastName` varchar(50) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `ConfirmPassword` varchar(50) NOT NULL,
+  `confirmpassword` varchar(50) NOT NULL,
   `status` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -41,7 +41,7 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `FirstName`, `LastName`, `username`, `email`, `password`, `ConfirmPassword`, `status`) VALUES
+INSERT INTO `users` (`id`, `firstname`, `lastname`, `username`, `email`, `password`, `confirmpassword`, `status`) VALUES
 (1, 'San', 'Jeev','Sanjeev', 'sanjeev@gmail.com', '12345', '12345', '1'),
 (2, 'Ra', 'Ahul','Rahul', 'rahul@gamail.com', '12345', '12345', '1'),
 (3,  'Alok ', 'Singh','Alok Kumar Singh', 'alok@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b','7c4a8d09ca3762af61e59520943dc26494f8941b', '1'),

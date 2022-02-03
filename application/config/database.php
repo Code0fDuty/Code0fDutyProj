@@ -79,7 +79,7 @@ $db['default'] = array(
 	'username' => 'root',
 	'password' => '',
 // <<<<<<< HEAD
-	// 'database' => 'testing',
+	'database' => 'testing',
 // =======
 	'database' => 'ci_login',
 // >>>>>>> 72decd48a21a6595fb560b781fc4454b09273acb

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -12,12 +13,14 @@
 
 
 	<title>GOAL TRACKER SIGN UP</title>
+	<link rel="stylesheet" href="styles.css">
 	<!-- echo <img src="/public/goal.jpg" width="280" height="125" title="Logo of a company" alt="Logo of a company" /> -->
 
 
 </head>
 
-<body style='background-color:  #ffcaaf'>
+<body style='background: -webkit-linear-gradient(right, #3931af, #00c6ff)'>
+
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
@@ -44,11 +47,19 @@
 		</div>
 	</nav>
 	<p> </p>
+	
 	<div class="container" style="margin-right: 1px">
-		<div class="row">
-			<div class="col-md-6"></div>
+	<div class="row">
+				
+			<div class="col-md-6" font-family="sans-serif-bold">
+				<br><br>
+
+				<img src="https://www.pngall.com/vector-png/download/12714" alt=""/>
+			</div>
+
+
 			<div class="col-md-4">
-				<div class="card" style="margin-top: 30px">
+				<div class="card" style="margin-top: 20px">
 					<div class="card-header text-center">
 						<img src="https://img.icons8.com/material/50/000000/edit-user-male--v1.png" ass="rounded-circle" alt="logo">
 						<h2>Sign Up</h2>
