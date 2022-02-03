@@ -29,20 +29,29 @@ class Welcome extends CI_Controller {
 
 		if($_SERVER['REQUEST_METHOD']=='POST')
 		{
+			$this->form_validation->set_rules('firstname', 'FirstName');
+			$this->form_validation->set_rules('lastname', 'LastName');
 			$this->form_validation->set_rules('username','User Name','required');
 			$this->form_validation->set_rules('email','Email','required');
 			$this->form_validation->set_rules('password','Password','required');
+			$this->form_validation->set_rules('confirmpassword', 'ConfirmPassword');
 
 			if($this->form_validation->run()==TRUE)
 			{
+				$firstname = $this->input->post('firstname');
+				$lastname = $this->input->post('lastname');
 				$username = $this->input->post('username');
 				$email = $this->input->post('email');
 				$password = $this->input->post('password');
+				$confirmpassword = $this->input->post('confirmpassword');
 
 				$data = array(
+					'firstname'=>$firstname,
+					'lastname'=>$lastname,
 					'username'=>$username,
 					'email'=>$email,
 					'password'=>sha1($password),
+					'confirmpassword'=>sha1($confirmpassword),
 					'status'=>'1'
 				);
 
