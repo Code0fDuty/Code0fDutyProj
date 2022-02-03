@@ -21,7 +21,6 @@
 
 <body style='background: -webkit-linear-gradient(right, #3931af, #00c6ff)'>
 
-
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container-fluid">
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
@@ -31,8 +30,6 @@
 			
 			<a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
 			
-
-
 			<p><i class="fas fa-bolt fa-3x amber-text pr-3" aria-hidden="true"></i></p>
            			
 			<form class="d-flex">
@@ -46,7 +43,7 @@
 			</div>
 		</div>
 	</nav>
-	<p> </p>
+	
 	
 	<div class="container" style="margin-right: 1px">
 	<div class="row">

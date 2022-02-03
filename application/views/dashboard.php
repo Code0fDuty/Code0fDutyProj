@@ -1,11 +1,9 @@
-<!-- <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>  -->
-<div class="container-fluid">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
+<nav class="navbar-dark bg-dark">
+  <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a> 
+  
+</nav>
+&nbsp; <a class="navbar- navbar-expand-lg" href="<?=base_url('welcome/logout')?>">Logout</a>
 
-&nbsp; <a class="navbar-brand-right" href="<?=base_url('welcome/logout')?>">Logout</a>
 
 <form class="d-left">
 <?php 
@@ -19,7 +17,7 @@ else
     redirect(base_url('welcome/login'));
 }
 
-echo "<body style='background-color: #F5F5DC.'>";
+echo "<body style='background-color: beige'>";
 
 
 
@@ -138,11 +136,11 @@ echo "<body style='background-color: #F5F5DC.'>";
         });
         
     });
-    
-             
+
     </script>
     
 </head>
+
     <body>
         
         <br />

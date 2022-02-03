@@ -86,7 +86,7 @@
 							</div>
 
 						 <div class="text-center">
-						  <button type="submit" class="btn btn-primary">Login Now</button>
+						  <button type="submit" class="btn btn-primary">Login</button>
 						</div>
 				<br>
 						<p class="login-register-text text-center small">Don't have an account? <a href="/Team-7/welcome">SIGN UP </a>.</p>
