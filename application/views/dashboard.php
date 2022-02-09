@@ -1,11 +1,29 @@
-<nav class="navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a> 
-  
-</nav>
-&nbsp; <a class="navbar- navbar-expand-lg" href="<?=base_url('welcome/logout')?>">Logout</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+		  <div class="container-fluid">
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <a class="navbar-brand" href="#"> <img src="https://img.icons8.com/bubbles/64/000000/google-tag-manager.png"/> GOAL TRACKER </a>
+            <form class="d-flex">
+		    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		        <!-- <li class="nav-item"> 
+		          <a class="nav-link active" aria-current="page" href="#">Register</a>
+		        </li> -->
+                <li class="nav-item">
+                <a class="navbar- navbar-expand-lg"  href="<?=base_url('welcome/logout')?>">Logout</a>
+					</li>
+				</ul>		    
+		      <form class="d-flex">		        
+		      </form>
+		    </div>
+		  </div>
+		</nav>
 
 
-<form class="d-left">
+<br>
+&#160; &#160; &#160; <img src="https://img.icons8.com/external-kmg-design-flat-kmg-design/32/000000/external-user-user-interface-kmg-design-flat-kmg-design-2.png"/>
 <?php 
 if($this->session->userdata('UserLoginSession'))
 {
@@ -18,8 +36,6 @@ else
 }
 
 echo "<body style='background-color: beige'>";
-
-
 
  ?>
 

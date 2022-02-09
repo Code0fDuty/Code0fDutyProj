@@ -17,7 +17,6 @@
   </head>
   <body style='background: -webkit-linear-gradient(right, #3931af, #00c6ff)'>
 
-  
 
   	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
@@ -104,7 +103,6 @@
 			</div>
 		</div>
     
-
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
