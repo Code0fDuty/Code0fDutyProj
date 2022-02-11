@@ -8,14 +8,13 @@
             <form class="d-flex">
 		    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 		      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		        <!-- <li class="nav-item"> 
-		          <a class="nav-link active" aria-current="page" href="#">Register</a>
-		        </li> -->
+              <!-- <li class="nav-item">
+                <a class="navbar- navbar-expand-lg"  href="<?=base_url('profile')?>">Profile</a>
+				</li> &#160;  &#160;  &#160;  &#160; -->
                 <li class="nav-item">
                 <a class="navbar- navbar-expand-lg"  href="<?=base_url('welcome/logout')?>">Logout</a>
-					</li>
-				</ul>		    
-		      <form class="d-flex">		        
+				</li>
+			 </ul>		    	        
 		      </form>
 		    </div>
 		  </div>
@@ -35,7 +34,7 @@ else
     redirect(base_url('welcome/login'));
 }
 
-echo "<body style='background-color: beige'>";
+echo "<body style='background-color: white'>";
 
  ?>
 
@@ -151,19 +150,62 @@ echo "<body style='background-color: beige'>";
             
         });
         
-    });
-
-    </script>
-    
-</head>
-
-    <body>
         
-        <br />
+    });
+    </script> 
+</head>
+        <br>
         <h2 align ="center"><a href="#">CALENDAR TRACKER</a></h2>
-        <br />
-        <div class="container">
+        <br>
+        <div class="container" align="right">
             <div id="calendar"></div>
         </div>
-    </body>
+
+        <textarea>This is a sticky note you can type and edit.</textarea>
+        <div id="create">+</div> 
+        <style>
+                @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+                * { box-sizing:border-box; }
+
+
+                #create, textarea  { 
+                float:left; 
+                padding:25px 25px 40px;
+                margin:0 20px 20px 0;
+                width:250px;
+                height:250px; 
+                }
+
+                #create {
+                user-select:none;
+                padding:20px; 
+                border-radius:20px;
+                text-align:bottom; 
+                border:15px solid rgba(0,0,0,0.1); 
+                cursor:pointer;
+                color:rgba(0,0,0,0.1);
+                font:220px "Helvetica", sans-serif;
+                line-height:185px;
+                }
+
+                #create:hover { border-color:rgba(0,0,0,0.2); color:rgba(0,0,0,0.2); }
+
+                textarea {
+                font:20px 'Gloria Hallelujah', cursive; 
+                line-height:1.5;
+                border:0;
+                border-radius:3px;
+                background: linear-gradient(#F9EFAF, #F7E98D);
+                box-shadow:0 4px 6px rgba(0,0,0,0.1);
+                overflow:hidden;
+                transition:box-shadow 0.5s ease;
+                font-smoothing:subpixel-antialiased;
+                max-width:520px;
+                max-height:250px;
+                }
+                textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+                textarea:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
+            </style>
+            </body>
 </html>

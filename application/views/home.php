@@ -49,10 +49,13 @@
 	<div class="row">
 				
 			<div class="col-md-6" font-family="sans-serif-bold">
-				<br><br>
+				<br><br><br>
+				&nbsp; <h1><b> Create your Account <br> Start to Build your Habit! </b></h1>
+
 
 				<img src="https://www.pngall.com/vector-png/download/12714" alt=""/>
 			</div>
+			
 
 
 			<div class="col-md-4">
@@ -65,6 +68,7 @@
 					</div>
 					<div class="card-body">
 						<form method="post" autocomplete="off" action="<?=base_url('welcome/registerNow')?>">
+						
 							<div class="mb-3">
 								<label for="exampleInputEmail1" class="form-label">First Name</label>
 								<input type="text" placeholder="First Name" name="firstname" class="form-control"
